@@ -1,4 +1,3 @@
-
 int Count(int number)
 {
 	static int count;

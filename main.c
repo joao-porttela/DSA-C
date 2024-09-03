@@ -1,10 +1,10 @@
 #include <stdio.h>
 #include <math.h>
-#include "./Exercises/FloydTriangle.c"
+#include "./Exercises/BinaryToDecimal.c"
 
 int main()
 {
-	FloydTriangle();
+	BinaryToDecimal();
 
 	return 0;
 };
