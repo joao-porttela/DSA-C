@@ -1,10 +1,10 @@
 #include <stdio.h>
-#include <math.h>
-#include "./Exercises/BinaryToDecimal.c"
+// #include <math.h>
+#include "./Exercises/PowerOf.c"
 
 int main()
 {
-	BinaryToDecimal();
+	PowerOf();
 
 	return 0;
 };
