@@ -1,10 +1,10 @@
 #include <stdio.h>
 // #include <math.h>
-#include "./Exercises/PowerOf.c"
+#include "./Exercises/PerfectNumber.c"
 
 int main()
 {
-	PowerOf();
+	PerfectNumber();
 
 	return 0;
 };
