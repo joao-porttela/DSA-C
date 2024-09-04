@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "./Exercises/Fib.c"
+#include "./Exercises/Factorial.c"
 
 int main()
 {
@@ -7,7 +7,7 @@ int main()
 	printf("Enter a number: ");
 	scanf("%d", &n);
 
-	int a = Fib(n);
+	int a = Factorial(n);
 	printf("%d", a);
 
 	return 0;
