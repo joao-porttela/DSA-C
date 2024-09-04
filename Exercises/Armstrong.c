@@ -1,12 +1,12 @@
+/*
+* Given a number of order n, an armstrong number is a number in which each digit when multiplied by it self n number of times and added together, results the same number.
+
+* 371, is a number of order 3.
+* 3*3*3 + 7*7*7 + 1*1*1 = 27 + 343 + 1 = 371
+*/
+
 int Armstrong()
 {
-	/*
-	* Given a number of order n, an armstrong number is a number in which each digit when multiplied by it self n number of times and added together, results the same number.
-
-	* 371, is a number of order 3.
-	* 3*3*3 + 7*7*7 + 1*1*1 = 27 + 343 + 1 = 371
-	*/
-
 	static int number;
 	static int count;
 	static int rem;

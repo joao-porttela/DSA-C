@@ -1,20 +1,19 @@
 #include "../lib/Count.c"
 
+/*
+ * 145 = 1! + 4! + 5! = 1 + 24 + 120 = 145
+ * 5 * 4 * 3 * 2 * 1
+ * fac = n * (n - 1);
+ */
+
 int Strong()
 {
-	/*
-	 * 145 = 1! + 4! + 5! = 1 + 24 + 120 = 145
-	 5 * 4 * 3 * 2 * 1
-	 fac = n * (n - 1);
-	 */
-
 	static int result;
 	static int rem;
 
 	int number = 145;
 	int q = number;
 
-	// O(n)
 	int count = Count(number);
 
 	for (int i = 0; i < count; i++)
