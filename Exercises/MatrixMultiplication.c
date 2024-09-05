@@ -45,7 +45,8 @@ void MatrixMultiplication()
 
 	if (acols != brows)
 	{
-		printf("The number of columns of the A array must be the same to B array rows");
+		printf("The number of A columns must be the same to B rows");
+		return;
 	}
 	else
 	{
