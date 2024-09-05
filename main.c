@@ -1,8 +1,8 @@
 #include <stdio.h>
-#include "./Exercises/MultiDimentionalArray.c"
+#include "./Exercises/MatrixMultiplication.c"
 
 int main()
 {
-	MultiDimentionalArray();
+	MatrixMultiplication();
 	return 0;
 };
