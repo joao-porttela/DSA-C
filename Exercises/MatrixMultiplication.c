@@ -1,9 +1,14 @@
-
 /*
+
 A				B
 {1, 2, 3}		{1, 2, 3}
 {4, 5, 6}		{4, 5, 6}
 {7, 8, 9}		{7, 8, 9}
+
+
+loop over A[0-3][col] and B[row][0-3]
+
+A[i][k] B[k][j] -> k => A cols === B rows
 
 A {{0,0}, {0,1}, {0,2}}
 	X	+	X	+	X	= Product
@@ -38,15 +43,21 @@ void MatrixMultiplication()
 
 	int b[brows][bcols];
 
-	printf("Enter the elements of array b:\n");
-	for (int i = 0; i < brows; i++)
+	if (acols != brows)
 	{
-		for (int j = 0; j < bcols; j++)
+		printf("The number of columns of the A array must be the same to B array rows");
+	}
+	else
+	{
+		printf("Enter the elements of array b:\n");
+		for (int i = 0; i < brows; i++)
 		{
-			scanf("%d", &b[i][j]);
+			for (int j = 0; j < bcols; j++)
+			{
+				scanf("%d", &b[i][j]);
+			}
 		}
 	}
-
 	printf("\n");
 
 	int product[arows][bcols];
@@ -66,6 +77,7 @@ void MatrixMultiplication()
 		}
 	}
 
+	printf("Resultant matrix:\n");
 	for (int i = 0; i < arows; i++)
 	{
 		for (int j = 0; j < bcols; j++)
