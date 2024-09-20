@@ -83,7 +83,7 @@ void MatrixMultiplication()
 	{
 		for (int j = 0; j < bcols; j++)
 		{
-			printf("%d ", product[i][j]);
+			printf(" %d ", product[i][j]);
 		}
 		printf("\n");
 	}

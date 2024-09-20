@@ -1,5 +1,6 @@
-struct Node
+struct LinkedList
 {
-	int value;
-	struct Node *next;
-} Node;
+	struct Node *head;
+	struct Node *tail;
+	int Length = 0;
+} LinkedList;
